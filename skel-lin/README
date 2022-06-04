@@ -1,0 +1,9 @@
+=== Sima Andreea 335CA ===
+For treating the page faults I used the segv_handler function, which
+finds the segment that produced SIGSEGV, and if none is found, it calls
+the default handler. I find the page address and map it with mmap and
+give it permissions with mprotect.
+For reading from the input file I declared a file descriptor. 
+
+I only implemented the Linux version.
+The resources I used are lab4 and lab6 from SO labs.
